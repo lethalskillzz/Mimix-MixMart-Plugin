@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lethalsys.mimix.mixmart_addon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    
+        <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <service android:name=".MixMartService"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="mimix.intent.action.PICK_ADD_ON" />
+                <category android:name="mimix.intent.category.MIXMART_ADD_ON" />
+            </intent-filter>
+        </service>
+   
+               
+        <activity
+            android:name="com.lethalsys.mimix.mixmart_addon.MixMart"
+            android:label="@string/app_name" >
+        <intent-filter>
+                <action android:name="android.intent.action.Launch" />
+                <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.lethalsys.mimix.mixmart_addon.SubmitAd"
+            android:label="@string/title_submit_ad"
+            android:theme="@style/ThemeWithBlueCorners" >
+        </activity>
+ 
+        
+        <activity
+            android:name="com.lethalsys.mimix.mixmart_addon.DisplayAd"
+            android:label="@string/title_display_ad"
+            android:theme="@style/ThemeWithBlueCorners" >
+        </activity>
+ 
+        
+        <activity
+            android:name="com.lethalsys.mimix.mixmart_addon.MixMartList"
+            android:label="@string/title_mix_mart_list">
+        </activity>
+        
+        
+        
+    </application>
+    
+
+</manifest>

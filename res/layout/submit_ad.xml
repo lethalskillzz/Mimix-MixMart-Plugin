@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="4dp" >       
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:orientation="vertical"
+        android:background="@drawable/round_ash_corners"
+        android:padding="4dp" 
+         >
+ 
+ 
+ 
+<Spinner
+    android:id="@+id/submitadd_cat"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginTop="5dp"
+    android:entries="@array/cat_array"
+    android:prompt="@string/cat_prompt"/>
+    
+
+
+<ImageView
+    android:id="@+id/submitadd_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_horizontal"
+    android:background="@drawable/xml_blank_button2"
+    android:cropToPadding="true"
+    android:longClickable="true"
+    android:onClick="get_add_img"
+    android:scaleType="center"
+    android:layout_marginTop="15dp"
+    android:src="@drawable/ic_camera" />
+
+
+
+<View style="@style/Divider"/>
+
+
+<EditText
+    android:id="@+id/submitadd_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:ems="10"
+    android:hint="Title"
+    android:maxLength="25" >
+
+</EditText>
+ 
+
+
+
+
+
+<EditText
+    android:id="@+id/submitadd_desc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:hint="Description"
+    android:maxLength="60" >
+
+</EditText>
+
+
+
+
+  
+
+<EditText
+    android:id="@+id/submitadd_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="right"
+    android:hint="00.0"
+    android:textColor="#55b948"
+    android:inputType="numberDecimal"
+    android:drawableLeft="@drawable/ic_naira"
+    android:lines="1"
+    android:maxLength="11"
+    android:maxLines="1"
+    android:singleLine="true" />
+
+
+
+
+
+ 
+     <TextView
+      android:id="@+id/submitadd_privacy"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:textSize="15sp"
+      android:text="By clicking on submit you have automatically agreed to make your cantact details public to potential customers."      
+      />
+       
+
+
+<View style="@style/Divider"/>
+
+
+
+            <Button
+                android:id="@+id/submitadd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/post_btn"
+                android:onClick="el_submit"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />  
+                
+      
+    
+     </LinearLayout> 
+     
+        
+        </ScrollView> 
+       

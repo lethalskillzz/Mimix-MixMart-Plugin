@@ -1,0 +1,54 @@
+     
+   <FrameLayout android:id="@+id/MixMart_wrapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+            
+     
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fadehomebg" >                  
+   
+        
+             <Button
+                 android:id="@+id/SubmitaddBtn"
+                 android:layout_width="300dip"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginBottom="35dp"
+                 android:layout_marginTop="25dp"
+                 android:background="@drawable/post_btn"
+                 android:onClick="GoSubmitAdd"
+                 android:paddingBottom="5dip"
+                 android:paddingTop="5dip"
+                 android:text="Submit an Ad"
+                 android:textColor="#ffffff"
+                 android:textSize="20sp"
+                 android:textStyle="italic|bold"
+                 android:typeface="sans" />
+      
+                  
+                  
+
+    <GridView 
+    android:id="@+id/mixmart_gridView"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     />
+  
+    
+    
+    </LinearLayout>
+                
+</FrameLayout> 

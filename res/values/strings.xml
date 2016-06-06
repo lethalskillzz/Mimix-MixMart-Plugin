@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="addon_name">MixMart</string>
+    <string name="app_name">Mimix_MixMart_Addon</string>
+    <string name="title_submit_ad">Submit Ad</string>
+    <string name="title_display_ad">Display Ad</string>
+    <string name="title_mix_mart_list">MixMartList</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cat_prompt">Choose category</string>
+    
+        <string-array name="cat_array">
+        <item>Electronics - Gadgets</item>
+        <item>Books - Literature</item>
+        <item>Jobs - Services</item>
+        <item>Sports - Hobbies</item>
+        <item>Beauty - Fashion</item>
+        <item>Food - Provisions</item>
+  </string-array>
+
+</resources>

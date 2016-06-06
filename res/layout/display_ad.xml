@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="4dp" >       
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:orientation="vertical"
+        android:background="@drawable/round_ash_corners"
+        android:padding="4dp" 
+         >
+ 
+
+<TextView
+    android:id="@+id/dispadd_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="right"
+    android:text="date-date"
+    android:textColor="#5a5a60"
+    android:textSize="11sp"
+    android:textStyle="italic" 
+    android:padding="4dp">
+
+</TextView>
+    
+
+
+<ImageView
+    android:id="@+id/dispadd_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_horizontal"
+    android:background="@drawable/xml_blank_button2"
+    android:cropToPadding="true"
+    android:scaleType="center"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/def_postpic" />
+
+
+   
+
+
+
+
+<TextView
+android:id="@+id/dispadd_title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="10dp"
+android:textStyle="bold"
+android:text="Title">
+</TextView>
+ 
+
+<View style="@style/Divider"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:textColor="#5a5a60"
+    android:padding="4dp"
+    android:text="Description"
+    android:textSize="12sp" />
+    
+
+<View style="@style/Divider"/>
+
+
+
+<TextView
+android:id="@+id/dispadd_desc"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:padding="4dp"
+android:text="Description"
+>
+</TextView>
+
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_gravity="right"
+     android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="-14.5dp"
+    android:layout_marginTop="-6.5dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_naira"
+    />
+        
+
+<TextView
+    android:id="@+id/dispadd_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="00.0"
+    android:textColor="#55b948"
+    android:textSize="20sp"
+    android:textStyle="bold" 
+    android:padding="4dp"/>
+
+</LinearLayout>
+
+<View style="@style/Divider"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:textColor="#5a5a60"
+    android:padding="4dp"
+    android:text="Contacts"
+     />
+    
+
+<View style="@style/Divider"/>
+
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="-10dp"
+    android:layout_marginLeft="-12dp"
+    android:layout_marginTop="-12dp"
+    android:scaleX="0.4"
+    android:scaleY="0.4"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_user_phone"
+    />
+        
+
+<TextView
+    android:id="@+id/dispadd_phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autoLink="phone"
+    android:padding="4dp"
+    android:text="phone-phone"
+    android:textSize="14sp"
+    android:textColorLink="#2f6699" />
+
+</LinearLayout> 
+
+   
+   
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:scaleX="0.4"
+    android:scaleY="0.4"
+    android:layout_marginRight="-10dp"
+    android:layout_marginLeft="-12dp"
+    android:layout_marginTop="-14dp"
+    android:layout_marginBottom="-12dp"
+    android:src="@drawable/ic_user_mail"
+    />
+    
+<TextView
+    android:id="@+id/dispadd_mail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autoLink="email"
+    android:padding="0dp"
+    android:text="mail-mail"
+    android:textSize="14sp"
+    android:textColorLink="#2f6699"/>
+
+</LinearLayout> 
+
+</LinearLayout> 
+
+
+ 
+    </ScrollView>  
+       
+                  
+
+
